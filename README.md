@@ -10,7 +10,7 @@ from [branch 060-project-overview](https://github.com/StephenGrider/MeteorCasts/
 3. open Termianl, go to this directory, and run `meteor`
 4. open Browser and enter `http://localhost:3000`
 
-# input shorten link on browser flow:
+# Input shorten link on browser flow:
 server side
 1. intercept connection by `WebApp.connectHandlers.use(middleware)`
 2. middleware will extract connection by `token` and send it to onRoute
@@ -23,7 +23,7 @@ server side
 3.1 if token exists -> update clicks count on db -> set redirect on response
 3.2 if token do not exist -> call `next()` to let next middleware(React component) hanlde it
 
-# shorten link flow:
+# Shorten link flow:
 1. input long address and click submit
 
 client side  
